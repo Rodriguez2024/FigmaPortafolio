@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Brand: #292929;
+    --Gray:  #d9d9d9;
+    --GrayDark: #B5b5b5;
+    --GrayDarker: #7d7d7d;
+    --White: #ffffff;
+}
+
+
+/* Artículos en versión movil, con un padding superior moderado */
+
+article {
+	padding-top: 30px;
+}
+
+/* Los mismos artículos en una versión movil o tablet, 
+con un padding superior amplio */
+@media (min-width: 600px) {
+}
+
+@media (min-width: 480px) {
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Karla";
+        font-weight: 800;
+        font-style: bold;
+        color: var(--Brand);
+        padding: 1.5em;
+        gap: 1.5em;
+    }
+    
+    .uno {
+        padding: 1em 1em 1em 1em;
+    }
+
+    .inicio__nombre {
+        display: flex;
+    }
+
+    .inicio__nav {
+        font-weight: 400;
+        color: var(--Brand);
+        gap: 1em;
+    }
+    
+    .presentacion {
+        display: flex;
+        flex-direction: column-reverse;
+    }    
+    
+    .presentacion__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2.5em;
+    }
+    
+    .presentacion__enlaces {
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+        padding: 1em;
+    }
+    
+    .presentacion__img {
+        display: flex;
+        justify-content: center; /* Centra la imagen horizontalmente */
+        align-items: center; /* Centra la imagen verticalmente si es necesario */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        height: 100%; /* Si deseas centrar verticalmente, asegúrate de que el contenedor tenga altura */
+        margin: 0; /* Elimina márgenes que puedan interferir */
+        padding: 0; /* Elimina padding que pueda interferir */
+        box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    }
+
+    .imagen01{
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .lineaDiv {
+        width: 50%;
+    }
+    
+    hr {
+        width: 100%;
+        height: 0.125em;
+        background-color: var(--Brand);
+        margin: 20px auto;
+    }        
+}
+
+h1 {
+    text-align: center;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5em;
+}
+
+.presentacion__enlaces__boton {
+    color: var(--Brand);
+    background-color: var(--GrayDark);
+    padding: 1em 1.75em;
+    text-decoration: none;
+    cursor: pointer;
+    border: .1em solid var(--Brand);
+    box-sizing: border-box;
+    border-radius: .75em;
+    place-content: center;
+    box-shadow: 0.25em 0.25em var(--GrayDarker);
+}
+
+.presentacion__enlaces__boton:hover {
+    background-color: var(--GrayDarker);
+    border: .1em solid var(--Gray);
+    color: var(--White);
+}
+
+.contacto_h2 {
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: "Karla";
+    font-weight: 800;
+    font-style: bold;
+    color: var(--Brand);
+    padding: 1.5em;
+    gap: 1.5em;
+
+}
+
+.about_vacio {
+    width: 100;
+    padding: 2em;
+}
+
+.about__container__title {
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+
+.about__container__points{
+    display: flex;
+    padding: 0 0 0 3em;
+    column-gap: 3em;
+}
+
+about__container__points__box {
+    width: 100%;
+    padding-bottom: 10em;
+}
+
+.about__container__points__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190%;
+    padding-top: 1em;
+}
+
+.about__container__points__text {
+    word-spacing: .5em;
+    white-space: pre-wrap;
+    text-align: justify;
+    line-height: .5em;
+}
+
+.about__container__points__text__fechas {
+    display: flex;
+    gap: 2.5em;
+}
+
+.h2__img {
+    justify-items: center;
+}
+
+.about_text {
+    font-family: "Karla";
+    font-weight: 600;
+    font-style: bold;
+    color: var(--Brand);
+    justify-items: center;
+}
+
+.contacto_text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacto__container__points__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.languages__container__points__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-left: 2em; 
+}
+
+.contacto_p {
+    padding-bottom: 2em;
+}
+
+/* Los mismos artículos en una versión escritorio, con un padding superior muy generoso */
+
+@media (min-width: 1200px) {
+	article {
+		padding-top: 90px;
+	}
+}
